@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HOME DECOR WEBSITE</title>
+</head>
+<body>
+<!-- Header section -->
+<header>
+   <h1>Welcome to our HomeDecor Website!</h1>
+   <p>"Transform your home, Elevate your life"</p>//tagline
+   <img src="https://www.google.com/search?q=home+decor+website+logo&tbm=isch&chips=q:home+decor+website+logo,online_chips:decor+brand:1w_HlD59MvY%3D&client=ubuntu-sn&hl=en-US&sa=X&ved=2ahUKEwjT2Meyx7v-AhV_JbcAHSNuA3YQ4lYoBXoECAEQLA&biw=1846&bih=828#imgrc=_8BntHn3pKtEKM" alt="brand picture">
+   <p> we are delighted to have you here and excited to share with you our extensive collection of home decor items that can transform any living space into a beautiful and inviting home.
+from elegant furnishings to stunning decorative accents, we have everything you need to create your dream home.
+thank you for choosing us as your go-to homedecor destination. 
+HAPPY SHOPPING!.</p>
+</header>
+
+<!-- Navigation Bar -->
+<nav>
+ <ul>
+   <li><a href="index.php">Home</a></li>
+   <li><a href="products.php">Products</a></li>
+   <li><a href="about.php">About us</a></li>
+   <li><a href="contact.php">Contact us</a></li>
+ </ul>
+</nav>
+
+
+<!-- Main section -->
+<h2>Latest products</h2>
+ 
+ <div id="slideshow">
+ <img src="product1.jpg" alt="category 1">//home decor
+ <img src="product2.jpg" alt="category 2">//kitchen and dining
+ <img src="product3.jpg" alt="category 3">//home textiles
+ <img src="product3.jpg" alt="category 4">//flowers and greens
+ <img src="product3.jpg" alt="category 5">//bar and drinkware
+ <img src="product3.jpg" alt="category 6">//leather accessories
+ <img src="product3.jpg" alt="category 7">//bath and more
+ <img src="product3.jpg" alt="category 8">//furniture
+ <img src="product3.jpg" alt="category 9">//giftstore
+ </div>
+ 
+ <script>
+ var slideIndex = 0;
+ showslides();
+ 
+ function showslides() {
+ var i;
+ var slides = document.getElementById("slideshow").getElementByTagName("img");
+ for (i=0; i< slides.length; i++){
+    slides[i].style.display ="none";
+ }
+ slideIndex++;
+ if(slideIdex > slides.length) {
+ slideIndex=1;
+ }
+ slides[slideIndex-1].style.display="block";
+ setTimeout(showSlides, 3000);//change image every 3 seconds
+ }
+ </script>
+ 
+
+
+
